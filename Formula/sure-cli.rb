@@ -5,21 +5,21 @@
 class SureCli < Formula
   desc "Agent-first CLI for Sure personal finance"
   homepage "https://github.com/we-promise/sure-cli"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/we-promise/sure-cli/releases/download/v0.1.1/sure-cli_0.1.1_darwin_amd64.tar.gz"
-      sha256 "5d8e903249f7f94e2e7c3814a17fc47e4734f1b7b85b2e27b983fd28de0f7105"
+      url "https://github.com/we-promise/sure-cli/releases/download/v0.1.2/sure-cli_0.1.2_darwin_amd64.tar.gz"
+      sha256 "f004806e66c3a014183e3e77d1d83d26b7cede6c333538650639b5997fc8e2c9"
 
       def install
         bin.install "sure-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/we-promise/sure-cli/releases/download/v0.1.1/sure-cli_0.1.1_darwin_arm64.tar.gz"
-      sha256 "784f43c52d09428cf47cc94c73892ec678aec94a7ce416a99af7e0a2c8672ac8"
+      url "https://github.com/we-promise/sure-cli/releases/download/v0.1.2/sure-cli_0.1.2_darwin_arm64.tar.gz"
+      sha256 "16d85900d32fd53edebfc5172f6d5c85e8729f65f823f9e85b328fd559353a24"
 
       def install
         bin.install "sure-cli"
@@ -29,15 +29,15 @@ class SureCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/we-promise/sure-cli/releases/download/v0.1.1/sure-cli_0.1.1_linux_amd64.tar.gz"
-      sha256 "ef1cf3361bdf702d536c65aec2f76f583019aa50c5bae88369c010f0c97a3663"
+      url "https://github.com/we-promise/sure-cli/releases/download/v0.1.2/sure-cli_0.1.2_linux_amd64.tar.gz"
+      sha256 "42343f020a713919b886905a605a019b9e935c6d5ded65faf9852e31a1860b7b"
       def install
         bin.install "sure-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/we-promise/sure-cli/releases/download/v0.1.1/sure-cli_0.1.1_linux_arm64.tar.gz"
-      sha256 "fdf4aa2d92429a6cd970daa1c980804cbfb74a422e3e76de077c4245b097f2b8"
+      url "https://github.com/we-promise/sure-cli/releases/download/v0.1.2/sure-cli_0.1.2_linux_arm64.tar.gz"
+      sha256 "79d605844502592fa552ffa3d7b3a0a23bbdc0f123804d3142c18edd4f442601"
       def install
         bin.install "sure-cli"
       end
